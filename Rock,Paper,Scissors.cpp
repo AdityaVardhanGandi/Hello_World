@@ -19,7 +19,7 @@ void playGame() {
     std::srand(std::time(0));
     
     std::cout << "\nRock, Paper, Scissors Game!" << std::endl;
-    std::cout << "Choose (r)ock, (p)aper, or (s)cissors: ";
+    std::cout << "Choose r for rock, p for paper, or s for scissors: ";
     std::cin >> playerChoice;
     
     char computerChoice = getComputerChoice();
@@ -34,7 +34,7 @@ int main() {
         playGame();
         std::cout << "\nDo you want to play again? (y/n): ";
         std::cin >> choice;
-    } while (choice == 'y' || choice == 'Y');
+    } while (choice == 'yes' || choice == 'YES');
     
     std::cout << "Thanks for playing!" << std::endl;
     return 0;
